@@ -14,17 +14,18 @@ class Diretor {
 
 class Filme {
     constructor(id, titulo, ano, genero, duracao, cartaz, sinopse, direcao, elenco, classificacao, avaliacao){
-        this.id = id
-        this.titulo = titulo
-        this.ano = ano
-        this.genero = genero
-        this.duracao = duracao
-        this.sinopse = sinopse
-        this.cartaz = cartaz
-        this.direcao = direcao
-        this.elenco = elenco
-        this.classificacao = classificacao
-        this.avaliacao = avaliacao
+        this.id = id;
+        this.titulo = titulo;
+        this.ano = ano;
+        this.genero = genero;
+        this.duracao = duracao;
+        this.sinopse = sinopse;
+        this.cartaz = cartaz;
+        this.direcao = direcao;
+        this.elenco = elenco;
+        this.classificacao = classificacao;
+        this.avaliacao = avaliacao;
+        this.btnDetalhes = null;
     }
 
     getCard = async () => {
@@ -56,6 +57,21 @@ class Filme {
         card.appendChild(cardBody)
         cardBody.appendChild(hCardTitle)
         cardBody.appendChild(divDetalhes)
+        
+        this.setBtnDetalhes();
+        cardBody.appendChild(this.getBtnDetalhes());
+
         return card
+    }
+    
+    setBtnDetalhes = () => {
+        this.btnDetalhes = document.createElement('button');
+        this.btnDetalhes.appendChild(document.createTextNode("Detalhes"));
+        this.btnDetalhes.setAttribute("id",this.id);
+        this.btnDetalhes.setAttribute("class", "btnDetalhesFilme");
+    }
+    
+    getBtnDetalhes = () => {
+        return this.btnDetalhes;
     }
 }
