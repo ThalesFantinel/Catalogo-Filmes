@@ -3,11 +3,14 @@
     padding: 0;
 }
 
+/* Card dos filmes */
+
 #lista-filmes{
     display:flex;
     justify-content:center;
     flex-wrap: wrap;
     padding: 2rem;
+    background-color: #6f95ff;
 }
 
 .card img{
@@ -19,4 +22,116 @@
     margin-left: 3vh;
     width: 40vh;
     margin-bottom: 5vh;
+}
+
+/* Botão de detalhes */
+
+.btnDetalhesFilme{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 25%;
+    padding: 5px;
+    background-color: #000000d0;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.btnDetalhesFilme:hover{
+    background-color: #ffff;
+    color: #000000;
+}
+
+/* Informações de detalhes */
+
+.card-img-detalhes{
+    height: 400px;
+    padding: 0,5rem;
+    border-radius: 15px;
+}
+
+h6{
+    padding-bottom: 2px;
+}
+
+.card-detalhes{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    align-items: center;
+    height: 450px;
+    margin: 3em;
+    margin-left: 18rem;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    background-color: #bbbbbb;
+}
+
+.detalhes-title{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#mostrar-filme{
+    background-color: #6f95ff;
+}
+
+.div-detalhes{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px;
+    margin-right: 2px;
+}
+
+#btnFechar{
+    width: 100px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+    background-color: #000000d0;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+#btnFechar:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#btn-salvar{
+    width: 100px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: #000000d0;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+#btn-salvar:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#btn-excluir{
+    width: 100px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: #000000d0;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+#btn-excluir:hover{
+    background-color: #fff;
+    color: #000;
 }
